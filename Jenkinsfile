@@ -4,7 +4,7 @@ stages {
     stage('pull from git') {
         steps {
             bat 'git.exe clean -ffdx'
-            bat 'git clone https://github.com/isaacTadela/dev_project_3'
+            bat 'git clone https://github.com/isaacTadela/dev_project_3b'
         }
     }
     stage('rest app') {
@@ -38,7 +38,6 @@ stages {
     stage('docker-compose up') {
         steps {
 			bat 'docker-compose up -d'
-			sleep(10)
         }
     }
     stage('testing docker-compose') {
