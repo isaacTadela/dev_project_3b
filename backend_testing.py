@@ -4,7 +4,7 @@ import pymysql
 
 id, user_name, new_user_name = 85, 'anton', 'mama'
 
-host, port = '127.0.0.1', 5000
+host, port = 'localhost', 5000
 
     
 try:
