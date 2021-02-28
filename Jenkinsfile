@@ -30,7 +30,7 @@ stages {
     }
     stage('push image') {
         steps {
-			bat "echo IMAGE_TAG=${env.BUILD_NUMBER}>.env"
+			bat "echo 'IMAGE_TAG=${env.BUILD_NUMBER}' >.env"
 			bat "more .env"
             bat 'docker push -q iitzhakk/dev_proj_3b'
         }
